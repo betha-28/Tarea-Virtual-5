@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+
+<ui:composition template="/WEB-INF/templates/BasicTemplate.xhtml">
+
+ 	<ui:define name="content">
+	   <h:form >
+	   
+	<table>
+		<tr>
+			<td> <h:outputText value="Aleatorios1"> </h:outputText></td>
+			<td>  <h:inputText value="#{tareaVirtual.aleatorios1}" 
+	    			required="true" requiredMessage="Campo aleatorios1">	</h:inputText>
+	    			</td>
+	  		</tr>
+		
+		
+		<tr>
+			<td> <h:outputText value="Aleatorios2"></h:outputText></td>
+			<td>  <h:inputText  value="#{tareaVirtual.aleatorios2}" 
+	    			required="true" requiredMessage="Campo aleatorios2">	</h:inputText>
+	    			</td>
+		</tr>
+		
+		
+		
+			<tr>
+			<td> <h:outputText value="Aleatorios3"></h:outputText></td>
+			<td>  <h:inputText value="#{tareaVirtual.aleatorios3}" 
+	    			required="true" requiredMessage="Campo aleatorios3">	</h:inputText>
+	    			</td>
+		</tr>
+		
+		
+		
+	  <tr>
+			<td> <h:outputText value="numIntentos"></h:outputText></td>
+		<td>  <h:inputText value="#{tareaVirtual.numIntentos}" 
+	    			required="true" requiredMessage="Campo aleatorios3">	</h:inputText>
+	    			</td>
+	     </tr>
+	
+	
+	<tr>
+		<td><h:outputLabel value="#{tareaVirtual.mensaje}"></h:outputLabel></td>
+	</tr>
+	
+	
+	</table>   
+	
+	   <h:commandButton value="Procesar" action="#{tareaVirtual.aleatorios}"></h:commandButton>
+	   
+	  
+	   </h:form>
+
+
+	    
+	</ui:define>
+</ui:composition>
+
+</html>
+
+
+
